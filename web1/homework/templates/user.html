@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>USER</title>
+</head>
+<body>
+    {% if username in users %}
+        <h1>Welcome back, {{ username }}</h1>
+        <h2>Name: {{ users[username]["name"] }}</h2>
+        <h3>Age: {{ users[username]["age"] }}</h3>
+        <h3>Gender: {{ users[username]["gender"] }}</h3>
+        <h3>Hobbies: {{ users[username]["hobbies"] }}</h3>
+        <img src={{ users[username]["avatar"] }} alt="This is avatar" style="border-radius: 50%">
+    {% else %}
+        <h1>Username doesn't exist</h1>
+    {% endif %}
+
+
+</body>
+</html>

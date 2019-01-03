@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BMI</title>
+    </head>
+    <body>
+        {% if bmi<16 %}
+            <h1>BMI của bạn là {{ bmi }}. quá gầy </h1>
+        {% elif bmi<18.5 %}
+            <h1>BMI của bạn là{{ bmi }}. gầy</h1>
+        {% elif bmi<25 %}
+            <h1>BMI của bạn là{{ bmi }}. bình thường</h1>
+        {% elif bmi<30 %}
+            <h1>BMI của bạn là{{ bmi }}. thừa cân</h1>
+        {% else %}
+            <h1>BMI của bạn là{{ bmi }}. béo phì</h1>
+        {% endif %}
+    </body>
+
+        
+</body>
