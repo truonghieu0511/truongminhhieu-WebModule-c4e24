@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% for i in n %}
+        <div>
+            <a href="/i/{{ i.id }}">detail</a>
+            
+            <h3>{{ i.name }}</h3>
+            
+            <img src="{{ i.image }}" alt="">
+            
+            <h3>{{ i.rate }}</h3>
+        </div>
+    {%endfor%}
+</body>
+</html>
